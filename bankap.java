@@ -2,9 +2,9 @@ import java.util.*;
 public class bank{
     public static void main(SDtring args[]){
         Scanner in=new Scanner(Sysstem.in);
-        System.out.println(X:"Enter Account number: ");
+        System.out.println("Enter Account number: ");
         String acno =in.nextLine();
-        System.out.println(x:"Enter Account holder name: ");
+        System.out.println("Enter Account holder name: ");
         String acname=in.next();
 
         account ac=new account(acno,acname);
@@ -18,11 +18,11 @@ public class bank{
 
             int ch=in.nextInt();
             switch(ch){
-                case 1->System.out.println("Balance : "+ac.getbalance());
-                case 2->System.out.println("Enter amount to Deposit : "); double da =in.nextDouble();ac.deposit(da);
-                case 3->System.out.println("Enter amount to Withdraw : "); double dw =in.nextDouble();ac.withdraw(dw);
-                 case 4->System.out.println("Exiting.........");in.close();
-                 default->System.out.println("IInvalid choice");
+                case 1->{System.out.println("Balance : "+ac.getbalance());}
+                case 2->{System.out.println("Enter amount to Deposit : "); double da =in.nextDouble();ac.deposit(da);}
+                case 3->{System.out.println("Enter amount to Withdraw : "); double dw =in.nextDouble();ac.withdraw(dw);}
+                 case 4->{System.out.println("Exiting.........");in.close();}
+                 default->{System.out.println("IInvalid choice");}
             }
         }
     }
