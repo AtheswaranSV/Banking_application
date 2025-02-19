@@ -1,5 +1,5 @@
 import java.util.*;
-public class bank{
+public class Banking_application{
     public static void main(SDtring args[]){
         Scanner in=new Scanner(Sysstem.in);
         System.out.println("Enter Account number: ");
